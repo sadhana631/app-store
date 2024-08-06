@@ -12,7 +12,7 @@ const TabItem = props => {
 
   return (
     <li className="tab-item">
-      <button type="button" onclick={onClickTab} className={tabBtnClassName}>
+      <button type="button" onClick={onClickTab} className={tabBtnClassName}>
         {displayText}
       </button>
     </li>

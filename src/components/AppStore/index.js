@@ -1,3 +1,7 @@
+import {Component} from 'react'
+import AppItem from '../AppItem'
+import TabItem from '../TabItem'
+
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
   {tabId: 'GAMES', displayText: 'Games'},
