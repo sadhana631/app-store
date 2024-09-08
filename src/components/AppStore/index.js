@@ -293,11 +293,11 @@ const appsList = [
 
 class AppStore extends Component {
   state = {
-    SearchInput: '',
+    searchInput: '',
     activeTabId: tabsList[0].tabId,
   }
 
-  setActiveId = tabId => {
+  setActiveTabId = tabId => {
     this.setState({activeTabId: tabId})
   }
 
@@ -341,7 +341,7 @@ class AppStore extends Component {
               onChange={this.onChangeSearchInput}
             />
             <img
-              src={SEARCH_ICON | _URL}
+              src="https://assets.ccbp.in/frontend/react-js/app-store/search-icon.png"
               alt="search icon"
               className="search-icon"
             />
@@ -351,7 +351,7 @@ class AppStore extends Component {
               <TabItem
                 key={eachTab.tabId}
                 tabDetails={eachTab}
-                setActiveId={this.setActiveId}
+                setActiveTabId={this.setActiveTabId}
                 isActive={activeTabId === eachTab.tabId}
               />
             ))}
